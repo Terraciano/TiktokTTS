@@ -40,9 +40,16 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+temp/
+videoScripts/
+audioOutput/
+*.mp4
+*.wav
+
 
 # TypeScript v1 declaration files
 typings/
+.idea/
 
 # TypeScript cache
 *.tsbuildinfo

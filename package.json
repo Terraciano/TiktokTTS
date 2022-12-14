@@ -1,0 +1,17 @@
+{
+  "name": "tiktoktts",
+  "version": "1.0.0",
+  "description": "A simple Node version of /oscie57/tiktok-voice/",
+  "main": "generateAudio.mjs",
+  "scripts": {
+    "start": "node generateAudio.mjs"
+  },
+  "author": "terraciano",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.0",
+    "node-fetch": "^3.3.0"
+  }
+}
