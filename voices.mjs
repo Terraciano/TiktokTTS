@@ -1,5 +1,3 @@
-//TODO: transform into objects
-
 export const disneyVoices = {
   ghostface: "en_us_ghostface",
   chewbacca: "en_us_chewbacca",
@@ -39,27 +37,27 @@ export const americaVoices = {
 };
 
 export const asiaVoices = {
-  indonesianFemale: "id_001", //  # Indonesian - Female
-  japaneseFemale1: "jp_001", // # Japanese - Female 1
-  japaneseFemale2: "jp_003", //  # Japanese - Female 2
-  japaneseFemale3: "jp_005", // # Japanese - Female 3
-  japaneseMale: "jp_006", //  # Japanese - Male
-  koreanMale1: "kr_002", //  # Korean - Male 1
-  koreanFemale: "kr_003", // # Korean - Female
-  koreanMale2: "kr_004", //   # Korean - Male 2
+  indonesianFemale: "id_001",
+  japaneseFemale1: "jp_001",
+  japaneseFemale2: "jp_003",
+  japaneseFemale3: "jp_005",
+  japaneseMale: "jp_006",
+  koreanMale1: "kr_002",
+  koreanFemale: "kr_003",
+  koreanMale2: "kr_004",
 };
 
 export const singingVoices = {
-  alto: "en_female_f08_salut_damour", // # Alto
-  tenor: "en_male_m03_lobby", // # Tenor
-  warmyBreeze: "en_female_f08_warmy_breeze", //# Warmy Breeze
-  sunshineSoon: "en_male_m03_sunshine_soon", //# Sunshine Soon
+  alto: "en_female_f08_salut_damour",
+  tenor: "en_male_m03_lobby",
+  warmyBreeze: "en_female_f08_warmy_breeze",
+  sunshineSoon: "en_male_m03_sunshine_soon",
 };
 
 export const emotionalVoices = {
-  maleNarrator: "en_male_narration", //# narrator
-  maleWacky: "en_male_funny", //  # wacky
-  femalePeaceful: "en_female_emotional", // # peaceful
+  maleNarrator: "en_male_narration",
+  maleWacky: "en_male_funny",
+  femalePeaceful: "en_female_emotional",
 };
 
 export const moreVoices = {
