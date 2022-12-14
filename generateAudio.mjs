@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
-const commanderVoice = process.argv.slice(2)[0]
+const commanderVoice = process.argv.slice(2)[0];
 
 export const readTextFromFile = (fileName) => {
   return fs.readFileSync(
@@ -18,15 +18,15 @@ export const readTextFromFile = (fileName) => {
 
 const files = fs.readdirSync("inputTextFiles");
 
- const getFullAudioInBatch= async ()=> {
-   for (const file of files){
-     getFullAudioForFile(
-         commanderVoice||"en_male_narration",
-         readTextFromFile(file),
-         file
-     );
-     await timer(3000 + Math.random() * 1000);
-   }
-}
+const getFullAudioInBatch = async () => {
+  for (const file of files) {
+    getFullAudioForFile(
+      commanderVoice || "en_male_narration",
+      readTextFromFile(file),
+      file
+    );
+    await timer(3000 + Math.random() * 1000);
+  }
+};
 
-getFullAudioInBatch().then(()=>console.log('\x1b[42m','Done!'))
+getFullAudioInBatch().then(() => console.log("\x1b[42m", "Done!"));
