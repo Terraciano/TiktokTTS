@@ -22,47 +22,47 @@ export const englishVoices = {
   englishUsMale4: "en_us_010",
 };
 
-export const europeVoices = [
-  "fr_001", // # French - Male 1
-  "fr_002", // # French - Male 2
-  "de_001", // # German - Female
-  "de_002", // # German - Male
-  "es_002", //  # Spanish - Male
-];
+export const europeVoices = {
+  frenchMale1: "fr_001",
+  frenchMale2: "fr_002",
+  germanFemale: "de_001",
+  germanMale: "de_002",
+  spanishMale: "es_002",
+};
 
-export const americaVoices = [
-  "es_mx_002", //# Spanish MX - Male
-  "br_001", // # Portuguese BR - Female 1
-  "br_003", // # Portuguese BR - Female 2
-  "br_004", //  # Portuguese BR - Female 3
-  "br_005", //  # Portuguese BR - Male
-];
+export const americaVoices = {
+  spanishMxMale: "es_mx_002",
+  portugueseBrFemale1: "br_001",
+  portugueseBrFemale2: "br_003",
+  portugueseBrFemale3: "br_004",
+  portugueseBrMale: "br_005",
+};
 
-export const asiaVoices = [
-  "id_001", //  # Indonesian - Female
-  "jp_001", // # Japanese - Female 1
-  "jp_003", //  # Japanese - Female 2
-  "jp_005", // # Japanese - Female 3
-  "jp_006", //  # Japanese - Male
-  "kr_002", //  # Korean - Male 1
-  "kr_003", // # Korean - Female
-  "kr_004", //   # Korean - Male 2
-];
+export const asiaVoices = {
+  indonesianFemale: "id_001", //  # Indonesian - Female
+  japaneseFemale1: "jp_001", // # Japanese - Female 1
+  japaneseFemale2: "jp_003", //  # Japanese - Female 2
+  japaneseFemale3: "jp_005", // # Japanese - Female 3
+  japaneseMale: "jp_006", //  # Japanese - Male
+  koreanMale1: "kr_002", //  # Korean - Male 1
+  koreanFemale: "kr_003", // # Korean - Female
+  koreanMale2: "kr_004", //   # Korean - Male 2
+};
 
-export const singingVoices = [
-  "en_female_f08_salut_damour", // # Alto
-  "en_male_m03_lobby", // # Tenor
-  "en_female_f08_warmy_breeze", //# Warmy Breeze
-  "en_male_m03_sunshine_soon", //# Sunshine Soon
-];
+export const singingVoices = {
+  alto: "en_female_f08_salut_damour", // # Alto
+  tenor: "en_male_m03_lobby", // # Tenor
+  warmyBreeze: "en_female_f08_warmy_breeze", //# Warmy Breeze
+  sunshineSoon: "en_male_m03_sunshine_soon", //# Sunshine Soon
+};
 
-const emotionalVoices = [
-  "en_male_narration", //# narrator
-  "en_male_funny", //  # wacky
-  "en_female_emotional", // # peaceful
-];
+export const emotionalVoices = {
+  maleNarrator: "en_male_narration", //# narrator
+  maleWacky: "en_male_funny", //  # wacky
+  femalePeaceful: "en_female_emotional", // # peaceful
+};
 
-const moreVoices = {
+export const moreVoices = {
   en_us_ghostface: "Scream",
   en_male_grinch: "Trickster",
   en_male_wizard: "Magician",
@@ -77,9 +77,17 @@ const moreVoices = {
   en_female_ht_f08_wonderful_world: "Melodrama",
   en_male_m2_xhxs_m03_silly: "Quirky Time",
   en_male_funny: "Wacky",
-  en_female_emotional: "Peaceful",
-  en_male_m03_sunshine_soon: "Toon Beat",
-  en_female_f08_warmy_breeze: "Open Mic",
   en_male_m03_lobby: "Jingle",
   en_female_f08_salut_damour: "Cottagecore",
+};
+
+export const allVoices = {
+  ...americaVoices,
+  ...asiaVoices,
+  ...disneyVoices,
+  ...emotionalVoices,
+  ...englishVoices,
+  ...europeVoices,
+  ...singingVoices,
+  ...moreVoices,
 };
