@@ -1,4 +1,3 @@
-//Seems like server limit is 200 chars, we need to split the text, get multiple files and consolidate them into one long mp3 file.
 import fetch from "node-fetch";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -11,6 +10,7 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 const sessionId = process.env.SESSIONID;
+if(!sessionId||!sessionId.length) throw new Error('No Session ID found - Please go to README.MD and follow instructions')
 
 export const getTiktokVoiceOverChunk = async (textSpeaker, reqText) => {
   const endpoint = `https://api.tiktokv.com/media/api/text/speech/invoke/?text_speaker=${textSpeaker}&req_text=${reqText}&speaker_map_type=0&aid=1233`;

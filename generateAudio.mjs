@@ -9,22 +9,22 @@ const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
 export const readTextFromFile = (fileName) => {
   return fs.readFileSync(
-    path.join(__dirname, `/videoScripts/${fileName}`),
+    path.join(__dirname, `/inputTextFiles/${fileName}`),
     "utf8"
   );
 };
 
-const files = fs.readdirSync("videoScripts");
+const files = fs.readdirSync("inputTextFiles");
 
-async function getFullAudioInBatch() {
-  for (var i = 0; i < files.length; i++) {
-    getFullAudioForFile(
-      "en_male_narration",
-      readTextFromFile(files[i]),
-      files[i]
-    );
-    await timer(3000 + Math.random() * 1000);
-  }
+ const getFullAudioInBatch= async ()=> {
+   for (const file of files){
+     getFullAudioForFile(
+         "en_male_narration",
+         readTextFromFile(file),
+         file
+     );
+     await timer(3000 + Math.random() * 1000);
+   }
 }
 
-getFullAudioInBatch();
+getFullAudioInBatch().then(()=>console.log('\x1b[42m','Done!'))

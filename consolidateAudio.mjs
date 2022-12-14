@@ -40,6 +40,7 @@ const writeFile = (fileName) => {
 
 export const consolidateAudio = () => {
   fs.readdir("temp", (_, dirs) => {
+    if(!dirs) throw new Error("There's an error with the TikTok API, please check voice parameter and Session ID");
     dirs.forEach((dir) => {
       fs.readdir(path.join(__dirname, `/temp/${dir}`), () => {
         writeFile(dir).then(() => fs.remove("temp"));

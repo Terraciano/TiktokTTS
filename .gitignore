@@ -41,7 +41,7 @@ build/Release
 node_modules/
 jspm_packages/
 temp/
-videoScripts/
+inputTextFiles/
 audioOutput/
 *.mp4
 *.wav
