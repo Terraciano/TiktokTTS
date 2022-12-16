@@ -16,8 +16,7 @@ There's no character or word limit whatsoever.
  5. Right now you should be able to listen to the files inside `/audioOutput/` but if you want to import them into another software, the file would show up as corrupt. As a temporary fix, you should be able to load the .wav files into an online audio converter, once you download them, it should be fine. (There's a GH issue already created for this matter.) **Handbrake won't work for the conversion.**
  6. Done.
 
-Note that by default, it's using a narrator voice. You can change this string in the line 21 of `generateAudio.mjs` , there's a list of voices inside `voices.mjs`.
-In the future, we should be able to pass the voice as a flag when running the `start` script. (There's a GH issue already created for this matter too.)
+Note that by default, it's using a narrator voice. You can change this by passing the desired voice as an argument when executing the script. For example `npm run start en_us_007` , there's a list of valid voices inside `voices.mjs`.
  
  
 
