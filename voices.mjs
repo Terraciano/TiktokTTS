@@ -61,22 +61,22 @@ export const emotionalVoices = {
 };
 
 export const moreVoices = {
-  en_us_ghostface: "Scream",
-  en_male_grinch: "Trickster",
-  en_male_wizard: "Magician",
-  en_female_ht_f08_halloween: "Opera",
-  en_female_madam_leota: "Madame Leota",
-  en_male_ghosthost: "Ghost Host",
-  en_male_pirate: "Pirate",
-  en_female_ht_f08_glorious: "Euphoric",
-  en_male_sing_funny_it_goes_up: "Hypetrain",
-  en_female_samc: "Empathetic",
-  en_male_cody: "Serious",
-  en_female_ht_f08_wonderful_world: "Melodrama",
-  en_male_m2_xhxs_m03_silly: "Quirky Time",
-  en_male_funny: "Wacky",
-  en_male_m03_lobby: "Jingle",
-  en_female_f08_salut_damour: "Cottagecore",
+  scream: "en_us_ghostface",
+  trickster: "en_male_grinch",
+  magician: "en_male_wizard",
+  opera: "en_female_ht_f08_halloween",
+  madamLeota: "en_female_madam_leota",
+  ghosthost: "en_male_ghosthost",
+  pirate: "en_male_pirate",
+  euphoric: "en_female_ht_f08_glorious",
+  hypetrain: "en_male_sing_funny_it_goes_up",
+  empathetic: "en_female_samc",
+  serious: "en_male_cody",
+  melodrama: "en_female_ht_f08_wonderful_world",
+  quirtyTime: "en_male_m2_xhxs_m03_silly",
+  wacky: "en_male_funny",
+  jingle: "en_male_m03_lobby",
+  cottagecore: "en_female_f08_salut_damour",
 };
 
 export const allVoices = {
