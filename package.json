@@ -12,6 +12,7 @@
     "dotenv": "^16.0.3",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.1.0",
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "wav-file-info": "^0.0.10"
   }
 }
